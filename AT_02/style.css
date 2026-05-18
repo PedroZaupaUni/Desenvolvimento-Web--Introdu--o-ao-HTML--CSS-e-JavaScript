@@ -1,0 +1,176 @@
+body {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Agrupamento de tags para deixar títulos com o mesmo estilo de fonte */
+h1,
+h2 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Cabeçalho principal da página */
+header {
+    background-color: #2b2b2b;
+    border: 2px solid #b30000;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Seletor de id: estiliza somente o cabeçalho que tem id topo */
+#topo {
+    border-top: 6px solid #ffcc00;
+}
+
+/* Título principal */
+h1 {
+    color: #ffcc00;
+    font-size: 42px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Texto de introdução usando seletor de classe */
+.texto-introducao {
+    color: #dddddd;
+    font-size: 18px;
+    text-align: center;
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+/* Menu de navegação */
+.menu {
+    margin-top: 20px;
+}
+
+/* Área principal do conteúdo */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cada section fica separada como um bloco */
+section {
+    background-color: #2a2a2a;
+    border: 2px solid #444444;
+    border-left: 8px solid #b30000;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+/* Classe usada para cada carro */
+.carro {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Bloco de resumo inicial */
+.bloco-resumo {
+    border-left-color: #ffcc00;
+}
+
+/* Exemplo de classe extra aplicada em um carro específico */
+.destaque-mclaren {
+    border-right: 8px solid #ffcc00;
+}
+
+/* Títulos dos blocos */
+h2 {
+    color: #ffcc00;
+    font-size: 28px;
+    margin-top: 0;
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+/* Parágrafos */
+p {
+    color: #e6e6e6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Imagens dos carros */
+img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #b30000;
+    border-radius: 12px;
+}
+
+/* Agrupamento de listas ordenadas e não ordenadas */
+ol,
+ul {
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    padding: 20px 35px;
+    margin: 20px 0;
+}
+
+/* Lista ordenada dos carros */
+.lista-info {
+    list-style-type: decimal;
+}
+
+/* Lista não ordenada dos critérios */
+.lista-criterios {
+    list-style-type: square;
+}
+
+/* Itens das listas */
+li {
+    margin-bottom: 8px;
+    padding-left: 4px;
+}
+
+/* Links em formato de botão */
+a:link,
+a:visited {
+    background-color: #b30000;
+    color: #ffffff;
+    padding: 12px 20px;
+    margin: 6px 4px 6px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Efeito hover opcional nos links */
+a:hover {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+
+/* Efeito quando o link é clicado */
+a:active {
+    background-color: #ffffff;
+    color: #b30000;
+}
+
+/* Rodapé da página */
+footer {
+    background-color: #2b2b2b;
+    border-top: 3px solid #b30000;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}

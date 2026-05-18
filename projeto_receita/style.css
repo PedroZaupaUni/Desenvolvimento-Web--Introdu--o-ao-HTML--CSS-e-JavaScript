@@ -1,0 +1,92 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: beige;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+ 
+}
+
+#ingredientes{
+    display: flex;
+    flex-direction: column;
+    spacing: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+
+#imgBrigadeiroPrincipal{
+    width: 400px;
+    height: 300px;
+    border-radius: 100px;
+    border-inline-start: 5px solid brown;
+}
+
+h1{
+        color: brown;
+    }
+
+h2{
+    color: brown;
+}
+#ListaIngredientes{
+    color: rgb(89, 60, 6);
+    font-size: 20px;
+}    
+
+.ListaPreparo{
+    color: rgba(120, 68, 8, 0.452);
+    font-size: 20px;
+}
+section{
+    padding-top: 20px;
+      border: 3px solid brown;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#imgBrigadeiroPrincipal {
+    animation: rotate 3s infinite linear;
+}
+
+a:link, a:visited {
+  background: hsl(0, 100%, 50%);
+  color: rgb(0, 0, 0);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  animation: rainbowCircle 3s linear infinite;
+}
+
+@keyframes rainbowCircle {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+a:hover, a:active {
+  background-color: red;
+}
