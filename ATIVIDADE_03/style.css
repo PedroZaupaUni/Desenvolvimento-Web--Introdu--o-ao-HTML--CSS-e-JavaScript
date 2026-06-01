@@ -1,0 +1,291 @@
+
+body {
+    background-color: #f4f8ff;
+    color: #1f2937;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #0f4c81;
+}
+
+
+.cabecalho {
+    background-color: #ffffff;
+    border-bottom: 3px solid #0f7bdc;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+.cabecalho p {
+    margin: 0;
+    color: #4b5563;
+}
+
+
+.menu {
+    display: flex;
+    gap: 12px;
+}
+
+
+.menu a,
+.botao,
+.card a {
+    background-color: #0f7bdc;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+
+.menu a:hover,
+.botao:hover,
+.card a:hover {
+    background-color: #0f4c81;
+    transform: translateY(-3px);
+}
+
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+
+.banner {
+    background-color: #ffffff;
+    border: 2px solid #dbeafe;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    animation: aparecer 1s ease;
+}
+
+
+.texto-banner {
+    flex: 1;
+}
+
+
+.banner img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #0f7bdc;
+}
+
+
+.loja {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+
+.produtos {
+    flex: 3;
+}
+
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 2px solid #dbeafe;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    transition: 0.3s;
+    animation: subirCard 0.8s ease;
+}
+
+
+.card:hover {
+    border-color: #0f7bdc;
+    box-shadow: 0 8px 20px rgba(15, 123, 220, 0.18);
+    transform: translateY(-8px);
+}
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+
+.card p {
+    color: #4b5563;
+    text-align: center;
+}
+
+
+.card strong {
+    color: #0f4c81;
+    font-size: 20px;
+    display: block;
+    margin: 12px 0;
+}
+
+
+.carrinho {
+    background-color: #ffffff;
+    border: 2px solid #dbeafe;
+    border-left: 6px solid #0f7bdc;
+    border-radius: 14px;
+    padding: 20px;
+    flex: 1;
+    position: sticky;
+    top: 110px;
+}
+
+
+.carrinho ul {
+    background-color: #f4f8ff;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    padding: 15px 25px;
+    list-style-type: square;
+}
+
+
+.carrinho li {
+    margin-bottom: 8px;
+}
+
+
+.total {
+    background-color: #e0f2fe;
+    color: #0f4c81;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+.sobre {
+    background-color: #ffffff;
+    border: 2px solid #dbeafe;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+.rodape {
+    background-color: #0f4c81;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+.rodape a {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes subirCard {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        position: static;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .loja {
+        flex-direction: column;
+    }
+
+    .carrinho {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+}

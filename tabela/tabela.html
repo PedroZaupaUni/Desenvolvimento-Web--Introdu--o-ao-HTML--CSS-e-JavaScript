@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+    <style>
+        body{
+            background: #e1caca;
+            color:#000000;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            padding:20px;
+        }
+
+        .table-wrap{
+            max-width:950px;
+            margin:0 auto;
+            padding:10px;
+            border-radius:4px;
+        }
+        .rota{
+            width:100%;
+            border-collapse: collapse;
+        }
+        .rota thead tr{
+            background:#4b4b4b;
+            color:#fff;
+        }
+        .rota th, .rota td{
+            border:1px solid #000;
+            padding:10px;
+            text-align: center;
+        }
+        .rota tbody{
+            background:#f2f2f2;
+        }
+        .corner{
+            background:transparent;
+            color:#000;
+        }
+        /* estilo para a célula que faz a caption (colspan) */
+        .caption-cell{
+            background:#4b4b4b;
+            color:#fff;
+            font-size:1.1rem;
+            padding:12px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estruturação de rotina</h1>
+
+    <div class="table-wrap">
+        <table class="rota">
+            <thead>
+                <tr class="caption-row">
+                    <th colspan="8" class="caption-cell">Minha Rotina Semanal</th>
+                </tr>
+                <tr>
+                    <th class="corner"></th>
+                    <th>DOM</th>
+                    <th>SEG</th>
+                    <th>TER</th>
+                    <th>QUA</th>
+                    <th>QUI</th>
+                    <th>SEX</th>
+                    <th>SAB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>MANHÃ</th>
+                    <td>Dormir</td>
+                    <td>Estudar</td>
+                    <td>Estudar</td>
+                    <td>Estudar</td>
+                    <td>Estudar</td>
+                    <td>Estudar</td>
+                    <td>Dormir</td>
+                </tr>
+                <tr>
+                    <th>TARDE</th>
+                    <td>Dormir</td>
+                    <td>Trabalhar</td>
+                    <td>Trabalhar</td>
+                    <td>Trabalhar</td>
+                    <td>Trabalhar</td>
+                    <td>Trabalhar</td>
+                    <td>Churrasco</td>
+                </tr>
+                <tr>
+                    <th>NOITE</th>
+                    <td>Netflix</td>
+                    <td>Faculdade</td>
+                    <td>Faculdade</td>
+                    <td>Faculdade</td>
+                    <td>Faculdade</td>
+                    <td>Faculdade</td>
+                    <td>Balada</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

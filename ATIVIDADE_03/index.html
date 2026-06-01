@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <title>Blue Drinks</title>
+
+        
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3050/3050158.png">
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <header class="cabecalho" id="topo">
+            <div>
+                <h1>Blue Drinks</h1>
+                <p>Loja simples de bebidas e acessórios</p>
+            </div>
+
+            <nav class="menu">
+                <a href="#produtos">Produtos</a>
+                <a href="#carrinho">Carrinho</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </header>
+
+        
+        <main>
+            
+            <section class="banner">
+                <div class="texto-banner">
+                    <h2>Bebidas para todos os momentos</h2>
+
+                    <p>
+                        A Blue Drinks é uma loja fictícia criada para praticar HTML e CSS.
+                        Aqui você encontra bebidas e itens simples para montar seu carrinho.
+                    </p>
+
+                    <a class="botao" href="#produtos">Ver produtos</a>
+                </div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80"
+                    alt="Bebidas coloridas em copos"
+                >
+            </section>
+
+            
+            <section class="loja" id="produtos">
+                
+                <div class="produtos">
+                    <h2>Produtos</h2>
+
+                    <p>
+                        Escolha alguns produtos da nossa loja. O layout dos cards foi feito com CSS Grid.
+                    </p>
+
+                    <div class="grade-produtos">
+                        
+                        <article class="card">
+                            <img
+                                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80"
+                                alt="Chá gelado em copo de vidro"
+                            >
+
+                            <h3>Chá Gelado</h3>
+
+                            <p>
+                                Bebida refrescante para dias quentes, feita para quem gosta de algo leve.
+                            </p>
+
+                            <strong>R$ 12,90</strong>
+
+                            <a href="#carrinho">Adicionar</a>
+                        </article>
+
+                        
+                        <article class="card">
+                            <img
+                                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+                                alt="Café sendo preparado"
+                            >
+
+                            <h3>Café Especial</h3>
+
+                            <p>
+                                Café com sabor marcante para começar o dia com mais energia.
+                            </p>
+
+                            <strong>R$ 18,90</strong>
+
+                            <a href="#carrinho">Adicionar</a>
+                        </article>
+
+                        
+                        <article class="card">
+                            <img
+                                src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80"
+                                alt="Sucos naturais em copos"
+                            >
+
+                            <h3>Suco Natural</h3>
+
+                            <p>
+                                Suco natural com sabor de frutas, ideal para acompanhar refeições.
+                            </p>
+
+                            <strong>R$ 14,90</strong>
+
+                            <a href="#carrinho">Adicionar</a>
+                        </article>
+
+                        
+                        <article class="card">
+                            <img
+                                src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+                                alt="Copos de vidro com bebida"
+                            >
+
+                            <h3>Copo de Vidro</h3>
+
+                            <p>
+                                Copo simples e bonito para servir bebidas geladas ou quentes.
+                            </p>
+
+                            <strong>R$ 9,90</strong>
+
+                            <a href="#carrinho">Adicionar</a>
+                        </article>
+                    </div>
+                </div>
+
+                
+                <aside class="carrinho" id="carrinho">
+                    <h2>Carrinho</h2>
+
+                    <p>
+                        Carrinho visual da loja. Como não usamos JavaScript, ele não adiciona itens automaticamente.
+                    </p>
+
+                    <ul>
+                        <li>Chá Gelado - R$ 12,90</li>
+                        <li>Café Especial - R$ 18,90</li>
+                        <li>Copo de Vidro - R$ 9,90</li>
+                    </ul>
+
+                    <p class="total">Total: R$ 41,70</p>
+
+                    <a class="botao" href="#topo">Finalizar pedido</a>
+                </aside>
+            </section>
+
+            
+            <section class="sobre" id="sobre">
+                <h2>Sobre a loja</h2>
+
+                <p>
+                    Esta página foi criada com uma estrutura simples para uma loja online fictícia.
+                    O tema escolhido foi uma loja de bebidas, usando cards de produtos e um carrinho visual.
+                </p>
+
+                <p>
+                    O projeto utiliza flexbox, grid, hover, animação simples e responsividade para celular.
+                </p>
+            </section>
+        </main>
+
+        
+        <footer class="rodape">
+            <p>Blue Drinks - Projeto de HTML e CSS</p>
+            <a href="#topo">Voltar ao topo</a>
+        </footer>
+    </body>
+</html>
